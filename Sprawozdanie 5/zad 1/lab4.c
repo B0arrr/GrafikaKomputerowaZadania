@@ -151,7 +151,6 @@ void draw() {
             float rad,z,a,b,r;
             rad = (float) (M_PI / 180.0);
             z=0.0f; a = 0.5f; b= 0.008f;
-            glRotatef(20.0f, 0.0f, 1.0f, 0.0f);
             glBegin(GL_LINE_STRIP);
             for(int alfa = 0.0f; alfa < 360*N; alfa++)
             {
