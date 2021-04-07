@@ -91,19 +91,19 @@ void display() {
 
     glVertex3f(0.0f,4.0f,0.0f);
 
-    glVertex3f(5.4f,0.0f,0.7f);
-    glVertex3f(4.3f,0.0f,3.3f);
-    glVertex3f(2.1f,0.0f,5.0f);
-    glVertex3f(-0.7f,0.0f,5.4f);
-    glVertex3f(-3.3f,0.0f,4.3f);
-    glVertex3f(-5.0f,0.0f,2.1f);
-    glVertex3f(-5.4f,0.0f,-0.7f);
-    glVertex3f(-4.3f,0.0f,-3.3f);
-    glVertex3f(-2.1f,0.0f,-5.0f);
-    glVertex3f(0.7f,0.0f,-5.4f);
-    glVertex3f(3.3f,0.0f,-4.3f);
-    glVertex3f(5.0f,0.0f,-2.1f);
-    glVertex3f(5.4f,0.0f,0.7f);
+    glVertex3f(5.4f,-1.5f,0.7f);
+    glVertex3f(4.3f,-1.5f,3.3f);
+    glVertex3f(2.1f,-1.5f,5.0f);
+    glVertex3f(-0.7f,-1.5f,5.4f);
+    glVertex3f(-3.3f,-1.5f,4.3f);
+    glVertex3f(-5.0f,-1.5f,2.1f);
+    glVertex3f(-5.4f,-1.5f,-0.7f);
+    glVertex3f(-4.3f,-1.5f,-3.3f);
+    glVertex3f(-2.1f,-1.5f,-5.0f);
+    glVertex3f(0.7f,-1.5f,-5.4f);
+    glVertex3f(3.3f,-1.5f,-4.3f);
+    glVertex3f(5.0f,-1.5f,-2.1f);
+    glVertex3f(5.4f,-1.5f,0.7f);
 
     glEnd();
 
