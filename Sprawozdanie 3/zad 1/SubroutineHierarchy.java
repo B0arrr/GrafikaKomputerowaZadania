@@ -49,6 +49,8 @@ public class SubroutineHierarchy extends JPanel {
 
         // TODO: Draw the content of the scene.
 
+        AffineTransform saveTransform = g2.getTransform();
+
         g2.translate(-1.5,1.5);
         rotatingPolygon(g2);
         g2.translate(-1.5,0.5);
@@ -63,8 +65,9 @@ public class SubroutineHierarchy extends JPanel {
         g2.rotate(Math.toRadians(18));
         g2.translate(-0.1,-1);
         filledTriangle(g2);
+        g2.setTransform(saveTransform);
 
-        g2.translate(3.5,-1.5);
+        g2.translate(1.3,-.8);
         g2.scale(1.5,1.5);
         rotatingPolygon(g2);
         g2.translate(-1.5,0.5);
@@ -79,8 +82,9 @@ public class SubroutineHierarchy extends JPanel {
         g2.rotate(Math.toRadians(18));
         g2.translate(-0.1,-1);
         filledTriangle(g2);
+        g2.setTransform(saveTransform);
 
-        g2.translate(2,2);
+        g2.translate(2.7,.9);
         g2.scale(0.5,0.5);
         rotatingPolygon(g2);
         g2.translate(-1.5,0.5);
@@ -95,6 +99,7 @@ public class SubroutineHierarchy extends JPanel {
         g2.rotate(Math.toRadians(18));
         g2.translate(-0.1,-1);
         filledTriangle(g2);
+        g2.setTransform(saveTransform);
     } // end drawWorld()
 
 
@@ -110,7 +115,7 @@ public class SubroutineHierarchy extends JPanel {
     // TODO: Define methods for drawing objects in the scene.
 
     private void rotatingPolygon(Graphics2D g2) {
-        AffineTransform saveTransform = g2.getTransform();  // (It might be necessary to save/restore transform and color)
+        AffineTransform saveTransform = g2.getTransform();
         Color saveColor = g2.getColor();
         g2.setColor(Color.BLACK);
         g2.rotate(Math.toRadians(frameNumber*2));
